@@ -1,4 +1,4 @@
-package svcerrors
+package svcerror
 
 import "errors"
 
@@ -9,7 +9,7 @@ type Error interface {
 	Status() int
 }
 
-// ServiceError represents an error with an associated status code (for documentation lookups).
+// ServiceError represents an error with an associated status code.
 type ServiceError struct {
 	Code int
 	Err  error
@@ -25,12 +25,12 @@ func Wrap(code int, err error) Error {
 	return ServiceError{Code: code, Err: err}
 }
 
-// Allows StatusError to satisfy the error interface.
+// Error allows StatusError to satisfy the error interface.
 func (se ServiceError) Error() string {
 	return se.Err.Error()
 }
 
-// Returns our HTTP status code.
+// Status returns the status code of an Error.
 func (se ServiceError) Status() int {
 	return se.Code
 }

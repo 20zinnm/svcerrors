@@ -1,5 +1,5 @@
 # svcerror
-[![Build Status](https://travis-ci.org/studiously/svcerror.svg?branch=master)](https://travis-ci.org/studiously/svcerror) [![Coverage Status](https://coveralls.io/repos/github/studiously/svcerror/badge.svg?branch=master)](https://coveralls.io/github/studiously/svcerror?branch=master)
+[![Build Status](https://travis-ci.org/studiously/svcerror.svg?branch=master)](https://travis-ci.org/studiously/svcerror) [![Coverage Status](https://coveralls.io/repos/github/studiously/svcerror/badge.svg?branch=master)](https://coveralls.io/github/studiously/svcerror?branch=master) [![GoDoc](https://godoc.org/github.com/studiously/svcerror?status.svg)](https://godoc.org/github.com/studiously/svcerror)
 
 Go errors relating to a status code.
 

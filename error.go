@@ -11,8 +11,8 @@ type Error interface {
 
 // ServiceError represents an error with an associated status code.
 type ServiceError struct {
-	Code int
-	Err  error
+	Code int `json:"code"`
+	Err  error `json:"error"`
 }
 
 // New returns a new Error with the given status code and text.
